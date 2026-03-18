@@ -12,3 +12,8 @@ dependencies = [
     "unsloth>=2026.3.6",
     "triton; sys_platform == 'linux'",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.6",
+]
