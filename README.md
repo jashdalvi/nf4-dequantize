@@ -7,7 +7,7 @@ A custom Triton kernel for dequantizing NF4 (4-bit NormalFloat) quantized weight
 | GPU | Speedup vs Unsloth |
 |-----|-------------------|
 | T4  | 1.3x              |
-| L4  | 1.15x             |
+| L4  | 1.16x             |
 
 ## Usage
 
