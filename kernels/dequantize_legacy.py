@@ -110,12 +110,12 @@ def _dequantize_nf4_legacy(weight, quant_state):
     grid = lambda meta: (triton.cdiv(num_elements, meta["BLOCK_SIZE"]),)  # noqa
     _dequantize_nf4_kernel_legacy[grid](
         weight,
-        out,
         quant_state.absmax,
         quant_state.state2.absmax,
         quant_state.code,
         quant_state.state2.code,
         quant_state.offset,
+        out,
         num_elements,
         BLOCK_SIZE=256,
     )

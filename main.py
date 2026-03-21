@@ -20,6 +20,7 @@ METHODS = {
 CONFIGS = [
     # (hd,    m,     seed, dtype,            label)
     (2048, 8192, 3407, torch.float16, "2048×8192  fp16"),
+    (2048, 8192, 3407, torch.bfloat16, "2048×8192  bf16"),
     (1024, 4096, 3409, torch.bfloat16, "1024×4096  bf16"),
     (4096, 14336, 3408, torch.bfloat16, "4096×14336 bf16"),
 ]
